@@ -31,3 +31,27 @@ arr.forEach(button => {
 
     })
 })
+
+
+ document.addEventListener('keydown' , (e) =>{
+    if(e.key == 'Enter')
+    {      
+        string = eval(string);
+        input.value = string;
+    }
+
+    else if(e.key == 'Escape' ){
+        string = "";
+        input.value = string;
+    }
+
+    else if(e.key == 'Backspace'){
+        string = string.substring(0,string.length-1);
+        input.value = string;
+    }
+
+    else{
+        string += e.key;
+        input.value = string;
+    }
+ });

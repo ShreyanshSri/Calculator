@@ -50,7 +50,8 @@ arr.forEach(button => {
         input.value = string;
     }
 
-    else{
+    else if((e.key >= 0 && e.key <= 9) || (e.key == '+' || e.key == '-' || e.key == '*' || e.key == '/' ||
+     e.key == '%' || e.key == '.') ){
         string += e.key;
         input.value = string;
     }

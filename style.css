@@ -69,3 +69,12 @@ button{
 .operator{
     color: #6dee0a;
 }
+
+.equalBtn:hover{
+    background: #c35d09;
+}
+
+button:hover{
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
